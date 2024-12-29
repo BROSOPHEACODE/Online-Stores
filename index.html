@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Store</title>
+    <!--Link bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!--Link icon bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!--link css-->
+    <link rel="stylesheet" href="/style/benner.css">
+    <link rel="stylesheet" href="/style/reponsive.css">
+    <link rel="stylesheet" href="/style/style.css">
+
+    <!-- link font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- link aos animetion -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+       <!--link animation-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    
+    
+</head>
+<body>
+    <div class="container-fluid p-0">
+        <nav class="navbar navbar-expand-lg  fixed-top shadow bg-light">
+            <div class="container py-2 py-md-4">
+                <div class="col-lg-4">
+                    <a href="" class="navbar-brand d-flex align-items-center">
+                        <img src="/image/Logo-E.png" alt="" style="width: 40px;">
+                        <h3 class="mx-2 text-uppercase fw-bold m-0 p-0">P-Stores</h3>
+                    </a>
+                </div>
+                <button class="navbar-toggler justify-content-end shadow-none border-0 text-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#navofcanvas">
+                    <i class="bi bi-list fs-1"></i>
+              </button>
+                <div class="col-lg-4 justify-content-center collapse navbar-collapse ps-5">
+                    <ul class="navbar-nav d-flex align-items-center font-righteous text-hover">
+                        <li><a href="" class="nav-link px-2 fs-5 mx-0 mx-lg-4 text-dark text-hover" href="">Home</a></li>
+                        <li><a href="#about" class="nav-link px-2 fs-5 mx-0 mx-lg-4 text-dark text-hover" href="">About</a></li>
+                        <li><a href="#Product" class="nav-link px-2 fs-5 mx-0 mx-lg-4 text-dark text-hover" href="">Product</a></li>
+                        <li><a href="#service" class="nav-link px-2 fs-5 mx-0 mx-lg-4 text-dark text-hover" href="">Service</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 justify-content-end collapse navbar-collapse ps-5">
+                    <ul class="navbar-nav d-flex align-items-center">
+                        <li><a href="" class="nav-link mx-lg-2 mx-0 px-1 fs-5 text-dark"><i class="bi bi-bag-heart text-dark"></i></a></li>
+                        <li><a href="" class="nav-link mx-lg-2 mx-0 px-2 fs-5 text-dark"><i class="bi bi-cart4 mx-2 text-dark"></i></a></li>
+                        <button class="btn btn-primary rounded-5 px-3"><i class="bi bi-person-circle px-2 mx-0 "></i>Login</button>
+                    </ul>
+                </div>
+            </div>
+        </nav>  
+    </div>
+    
+     <!-- ofcanvas -->
+     <div class="container-fluid ">
+        <div class="offcanvas offcanvas-end w-50 pb-2 " id="navofcanvas" data-bs-scroll="true">
+              <div class="offcanvas-header border-bottom pb-3 pt-4 shadow" >
+                  <div class="offcanvas-title d-flex align-items-center py-md-3" >
+                      <img src="logo/Logo-E.png" alt="" style="width: 40px;">
+                      <h3 class="mx-2  m-0 fw-bold font-righteous text-uppercase" style="color: #bf1db4";>P-Store</h3>
+                  </div>
+                  
+                <button type="button" class="btn-close shadow-none bg-light rounded-5 " data-bs-dismiss="offcanvas" ></button>
+              </div>
+              <div class="offcanvas-body font-righteous">
+                  <div class="row m-0">
+                      <div class="col-6">
+                            <ul class="navbar-nav">
+                              <li><a href="#" class="nav-link text-hover mx-lg-3 mx-0 px-2 fs-5 text-dark active">Home</a></li>
+                              <li><a href="#about" class="nav-link text-hover mx-lg-3 mx-0 px-2 fs-5 text-secondary">About</a></li>   
+                            </ul>
+                      </div>
+                      <div class="col-6">
+                            <ul class="navbar-nav ">
+                              <li><a href="#product" class="nav-link text-hover mx-lg-3 mx-0 px-2 fs-5 text-secondary">Products</a></li>
+                              <li><a href="#service" class="nav-link text-hover mx-lg-3 mx-0 px-2 fs-5 text-secondary">Services</a></li>
+                              
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 ">
+                        <ul class="navbar-nav ">
+                        <li class="d-flex "><a href="#Contact" class="nav-link text-hover mx-lg-2 mx-0 px-2 fs-5 text-dark">
+                          <i class="fa-solid fa-bag-shopping"></i>
+                          </a>
+                        <a href="#Contact" class="nav-link text-hover mx-lg-2 mx-0 px-2 fs-5 text-dark">
+                          <i class="fa-regular fa-heart"></i>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+  
+                    <div class="px-1 py-2 border-bottom">
+                      <form action="" class="d-flex align-items-center border mb-3 px-2">
+                        <i class="bi bi-search fs-4"></i>
+                        <input
+                          type="text"
+                          class="form-control shadow-none border-0"
+                          placeholder="Search..."
+                        />
+                        <span>Ctrl+k</span>
+                      </form>
+                    </div>
+                    <div class="dropdown mt-2 ms-2 ">
+                      <button
+                        class="btn  text-dark dropdown-toggle bg-success-subtle"
+                        type="button"
+                        data-bs-toggle="dropdown" 
+                      
+                      >
+                        <i class="bi bi-person-circle mb-3 px-2 Landscape In Rupp University"></i>Account
+                      </button>
+                      <ul class="dropdown-menu bg-success-subtle" >
+                        <li>
+                          <a class="dropdown-item text-hover text-dark" href="Login.html" target="_blank"
+                            >Sign In</a
+                          >
+                        </li>
+                        <li><a class="dropdown-item text-hover text-dark" href="#">Sign Out</a></li>
+                      </ul>
+                    </div>
+              </div>
+          </div>
+      </div>
+
+        <div class="container-fluid p-0">
+        <div class="container benner">
+            <div class="row m-0  rounded-1 p-2 p-md-5 benner-h" style="background-color:whitesmoke;">
+                <div class="col-12 col-md-12 col-lg-6 ps-lg-5 align-items-center d-flex">
+                    <div class="acticle py-5">
+                        <h4 class=" text-dark font-righteous ">50% Off Christmas Super Sale</h4>
+                        <h2 class="fw-bold  text-dark"><span class="auto-type"></span></h2>
+
+                    <div class="py-5">
+                        <button class="btn btn-primary col-5 col-lg-4  ">Shop Now<i class="bi bi-arrow-right px-1"></i></button>
+                    </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-12 col-lg-6">
+                    <div class="ps-md-5 benner-image-h">
+                        <div class="">
+                            <img src="/image/rose ft.webp" class="w-100 h-100m object-fit-cover" style="height: 400px;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+  
+    </div>
+    <div id="about" class="container-fluid p-0">
+        <!-- Brand Ambassador-->
+         <div class="container" data-aos="fade-up"
+         data-aos-eseing="ease-in-out" data-aos-delay="300">
+            <div class="pt-5">
+                <h2 class="font-righteous pt-5"><span class="text-primary"><i class="bi bi-lightning-charge-fill"></i></span> Brand Ambassador</h2>
+            </div>
+            <div class="row m-0 m-0 py-3 px-4">
+                <div class="col-12 col-md-6 col-lg-4 p-3">
+                    <div class="card-hover d-flex shadow">
+                        <div class="card-image p-2 rounded-3" style="background-color: #8fb1f0;">
+                            <img src="/image/ba1.jpg" class="w-100 h-100">
+                        </div>
+                        <div class="py-4 px-5 rounded-3 text-dark  w-100" style="background-color: #e8effc;">
+                            <h5 class="m-0 font-righteous">Rose</h5>
+                            <p class="m-0 py-1">Blackpink</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 p-3">
+                    <div class="card-hover d-flex shadow">
+                        <div class="card-image p-2 rounded-3" style="background-color: #8fb1f0;">
+                            <img src="/image/ba2.webp" class="w-100 h-100 object-fit-cover">
+                        </div>
+                        <div class="py-4 px-5 text-dark w-100 rounded-3" style="background-color:#e8effc;">
+                            <h5 class="m-0 font-righteous">jisoo</h5>
+                            <p class="m-0 py-1">BLackpink</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 p-3">
+                    <div class="card-hover d-flex shadow">
+                        <div class="card-image p-2 rounded-3" style="background-color: #8fb1f0;">
+                            <img src="/image/ba3 new.jpeg" class="w-100 h-100  ">
+                        </div>
+                        <div class="py-4 px-5 text-dark w-100 rounded-3" style="background-color:#e8effc;">
+                            <h5 class="m-0 font-righteous">jennie</h5>
+                            <p class="m-0 py-1">BLackpink</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 p-3">
+                    <div class="card-hover d-flex shadow">
+                        <div class="card-image p-2 rounded-3" style="background-color: #8fb1f0;">
+                            <img src="/image/jj7.jpeg" class="w-100 h-100">
+                        </div>
+                        <div class="py-4 px-5 rounded-3 text-dark  w-100" style="background-color: #e8effc;">
+                            <h5 class="m-0 font-righteous">Jing Jrok</h5>
+
+
+                        <p class="m-0 py-1">គ្រាប់ពេជ្រកម្ពុជា</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 p-3">
+                    <div class="card-hover d-flex shadow">
+                        <div class="card-image p-2 rounded-3" style="background-color: #8fb1f0;">
+                            <img src="/image/mr.jpeg" class="w-100 h-100">
+                        </div>
+                        <div class="py-4 px-5 rounded-3 text-dark  w-100" style="background-color: #e8effc;">
+                            <h5 class="m-0 font-righteous">Khemrak</h5>
+                            <p class="m-0 py-1">លោកឧកញ៉ា</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 p-3">
+                    <div class="card-hover d-flex shadow">
+                        <div class="card-image p-2 rounded-3" style="background-color: #8fb1f0;">
+                            <img src="/image/starboy.jpeg" class="w-100 h-100">
+                        </div>
+                        <div class="py-4 px-5 rounded-3 text-dark  w-100" style="background-color: #e8effc;">
+                            <h5 class="m-0 font-righteous">PeakMi</h5>
+                            <p class="m-0 py-1">ផ្ការីកគ្រប់រដូវ</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </div>
+
+         <!--Product-->
+         <div id="Product" class="container p-2 p-md-0 p-lg-4"   data-aos="fade-up"
+         data-aos-eseing="ease-in-out" data-aos-delay="300">
+            <div class="pt-3">
+                <h2 class="font-righteous"><span class="text-primary"><i class="bi bi-lightning-charge-fill"></i></span> New Arrivals</h2>
+            </div>
+            <h1 class="font-squada">Top Trending Items</h1>
+            <div class="d-flex  justify-content-start p-5 px-3 px-md-3 overflow-x-scroll">
+                <div class="col-6  col-md-3 col-lg-3 shadow rounded-3 overflow-hidden card-hover me-3 me-lg-1 me-xl-5">
+                    <div class="card p-2 position-relative overflow-hidden" style="background-color:#7aa0e783; height: 240px;">
+                        <div class="position-absolute">
+                            <div class="bg-light rounded-5 icon-hover p-1 d-flex justify-content-center align-items-center" style="height: 30px; width: 30px;">
+                                <i class="bi bi-suit-heart text-dark"></i>
+                              </div>
+                        </div>
+                        <img  class="image-product w-100 h-100 object-fit-cover" src="/image/f1.jpg" class="card-img-top " alt="">
+                    </div>
+                    <div class="card-body p-3 bg-light">
+                        <h5 class="font-righteous text-dark card-title">Cartoon  T-Shirts</h5>
+                        <p class="card-text text-dark">15.00$</p>
+                        <button class="btn btn-primary ms-a">Add to cart</button>
+                    </div>  
+                </div>
+                <div class="col-6  col-md-3 col-lg-3 shadow rounded-3 overflow-hidden card-hover me-3 me-lg-1 me-xl-5">
+                    <div class="card p-2 position-relative overflow-hidden" style="background-color:#7aa0e783; height: 240px;">
+                        <div class="position-absolute">
+                            <div class="bg-light rounded-5 icon-hover p-1 d-flex justify-content-center align-items-center" style="height: 30px; width: 30px;">
+                                <i class="bi bi-suit-heart text-dark"></i>
+                              </div>
+                        </div>
+                        <img  class="image-product w-100 h-100" src="/image/f2.jpg" class="card-img-top " alt="">
+                    </div>
+                    <div class="card-body p-3 bg-light">
+                        <h5 class="font-righteous text-dark card-title">Cartoon  T-Shirts</h5>
+                        <p class="card-text text-dark">15.00$</p>
+                    <button class="btn btn-primary">Add to cart</button>
+                    </div>  
+                </div>
+                <div class="col-6 col-md-3 col-lg-3 shadow rounded-3 overflow-hidden card-hover me-3 me-lg-1 me-xl-5">
+                    <div class="card p-2 position-relative overflow-hidden" style="background-color:#7aa0e783; height: 240px;">
+                        <div class="position-absolute">
+                            <div class="bg-light rounded-5 p-1 icon-hover d-flex justify-content-center align-items-center" style="height: 30px; width: 30px;">
+                                <i class="bi bi-suit-heart text-dark"></i>
+                            </div>
+                        </div>
+                        <img class="image-product w-100 h-100" src="/image/f3.jpg" class="card-img-top">
+                    </div>
+                    <div class="card-body p-3 bg-light">
+                        <h5 class="font-righteous text-dark card-title">Cartoon  T-Shirts</h5>
+                        <p class="card-text text-dark">20.00$</p>
+                        <button class="btn btn-primary">Add to cart</button>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3 col-lg- shadow rounded-3 overflow-hidden card-hover me-3 me-lg-1 me-xl-5">
+                    <div class="card p-2 position-relative overflow-hidden" style="background-color:#7aa0e783; height: 240px;">
+                        <div class="position-absolute">
+                            <div class="bg-light rounded-5 p-1 icon-hover d-flex justify-content-center align-items-center" style="height: 30px; width: 30px;">
+                                <i class="bi bi-suit-heart text-dark"></i>
+                            </div>
+                        </div>
+                        <img class="image-product w-100 h-100" src="/image/f4.jpg" class="card-img-top">
+                    </div>
+                    <div class="card-body p-3 bg-light">
+                        <h5 class="font-righteous text-dark card-title">Cartoon  T-Shirts</h5>
+                        <p class="card-text text-dark">20.00$</p>
+                        <button class="btn btn-primary">Add to cart</button>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3 col-lg-3 shadow rounded-3 overflow-hidden card-hover me-3 me-lg-1 me-xl-5">
+                    <div class="card p-2 position-relative overflow-hidden" style="background-color:#7aa0e783; height: 240px;">
+                        <div class="position-absolute">
+                            <div class="bg-light rounded-5 p-1 icon-hover d-flex justify-content-center align-items-center" style="height: 30px; width: 30px;">
+                                <i class="bi bi-suit-heart text-dark"></i>
+                            </div>
+                        </div>
+                        <img class="image-product w-100 h-100" src="/image/f5.jpg" class="card-img-top">
+                    </div>
+                    <div class="card-body p-3 bg-light">
+                        <h5 class="font-righteous text-dark card-title">Cartoon  T-Shirts</h5>
+                        <p class="card-text text-dark">20.00$</p>
+                        <button class="btn btn-primary">Add to cart</button>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3 col-lg- shadow rounded-3 overflow-hidden card-hover me-3 me-lg-1 me-xl-5">
+                    <div class="card p-2 position-relative overflow-hidden" style="background-color:#7aa0e783; height: 240px;">
+                        <div class="position-absolute">
+                            <div class="bg-light rounded-5 p-1 icon-hover d-flex justify-content-center align-items-center" style="height: 30px; width: 30px;">
+                                <i class="bi bi-suit-heart text-dark"></i>
+                            </div>
+                        </div>
+                        <img class="image-product w-100 h-100" src="/image/f6.jpg" class="card-img-top">
+                    </div>
+
+
+                    <div class="card-body p-3 bg-light">
+                        <h5 class="font-righteous text-dark card-title">Cartoon  T-Shirts</h5>
+                        <p class="card-text text-dark">20.00$</p>
+                        <button class="btn btn-primary">Add to cart</button>
+                    </div>
+                </div>
+            </div>
+         </div>
+
+         <!--New collection-->
+         <div id="service" class="container-fluid bg-light p-0 my-5">
+            <div  class="container p-0 p-lg-5 p-md-0">
+                <div class="row m-0 shadow p-4 p-md-3 p-lg-5">
+                    <div class="col-12 col-md-6 p-0" style="height: 550px;">
+                        <div class="w-100 h-100 p-1 pe-3 pe-md-4 p-lg-4 rounded-5" style="background-color: #e8effc;" >
+                            <img class="w-100 h-100 benner-image rounded-5" src="/image/ba1.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 p-0" style="height: 500px;">
+                        <div class="p-5 p-md-4 p-lg-5">
+                            <div class="py-4 pt-md-5 pt-lg-0 ">
+                                <h2  class="font-righteous text-dark  border-start border-primary ps-2 "><span class="text-primary"><i class="bi bi-lightning-charge-fill"></i></span> New Collection</h2>
+                                <h1 class="font-righteous text-dark py-3">Step into the season with fresh looks and bold styles.</h1>
+                                <p class="py-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad odio unde suscipit eaque voluptatum ducimus laborum numquam quam nihil incidunt facilis quae </p>
+                                <button class="btn btn-primary font-righteous col-5 col-md-6 col-lg-4 py-2 py-md-2 py-lg-2">Shop Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </div>  
+
+         <!--Product-->
+         <div id="service" class="container p-2 p-md-0 p-lg-4"   data-aos="fade-up"
+         data-aos-eseing="ease-in-out" data-aos-delay="300">
+            <div class="pt-3">
+                <h2 class="font-righteous"><span class="text-primary"><i class="bi bi-lightning-charge-fill"></i></span> Top Trending Items</h2>
+            </div>
+            <h1 class="font-squada">men's Bomber Jacket</h1>
+            <div class="d-flex  justify-content-start p-5 px-3 px-md-3 overflow-x-scroll">
+                <div class="col-6  col-md-3 col-lg-3 shadow rounded-3 overflow-hidden card-hover me-3 me-lg-1 me-xl-5">
+                    <div class="card p-2 position-relative overflow-hidden" style="background-color:#7aa0e783; height: 240px;">
+                        <div class="position-absolute">
+                            <div class="bg-light rounded-5 icon-hover p-1 d-flex justify-content-center align-items-center" style="height: 30px; width: 30px;">
+                                <i class="bi bi-suit-heart text-dark"></i>
+                              </div>
+                        </div>
+                        <img  class="image-product w-100 h-100 object-fit-cover" src="/image/G1.webp" class="card-img-top " alt="">
+                    </div>
+                    <div class="card-body p-3 bg-light">
+                        <h5 class="font-righteous text-dark card-title">Bomber Jacket</h5>
+                        <p class="card-text text-dark">15.00$</p>
+                        <button class="btn btn-primary">Add to cart</button>
+                    </div>  
+                </div>
+                <div class="col-6  col-md-3 col-lg-3 shadow rounded-3 overflow-hidden card-hover me-3 me-lg-1 me-xl-5">
+                    <div class="card p-2 position-relative overflow-hidden" style="background-color:#7aa0e783; height: 240px;">
+                        <div class="position-absolute">
+
+                            <div class="bg-light rounded-5 icon-hover p-1 d-flex justify-content-center align-items-center" style="height: 30px; width: 30px;">
+                                <i class="bi bi-suit-heart text-dark"></i>
+                              </div>
+                        </div>
+                        <img  class="image-product w-100 h-100" src="/image/G2 neww.jpg" class="card-img-top " alt="">
+                    </div>
+                    <div class="card-body p-3 bg-light">
+                        <h5 class="font-righteous text-dark card-title">Bomber Jacket</h5>
+                        <p class="card-text text-dark">15.00$</p>
+                        <button class="btn btn-primary">Add to cart</button>
+                    </div>  
+                </div>
+                <div class="col-6 col-md-3 col-lg-3 shadow rounded-3 overflow-hidden card-hover me-3 me-lg-1 me-xl-5">
+                    <div class="card p-2 position-relative overflow-hidden" style="background-color:#7aa0e783; height: 240px;">
+                        <div class="position-absolute">
+                            <div class="bg-light rounded-5 p-1 icon-hover d-flex justify-content-center align-items-center" style="height: 30px; width: 30px;">
+                                <i class="bi bi-suit-heart text-dark"></i>
+                            </div>
+                        </div>
+                        <img class="image-product w-100 h-100" src="/image/G3new.jpeg" class="card-img-top">
+                    </div>
+                    <div class="card-body p-3 bg-light">
+                        <h5 class="font-righteous text-dark card-title">Bomber Jacket</h5>
+                        <p class="card-text text-dark">20.00$</p>
+                        <button class="btn btn-primary">Add to cart</button>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3 col-lg- shadow rounded-3 overflow-hidden card-hover me-3 me-lg-1 me-xl-5">
+                    <div class="card p-2 position-relative overflow-hidden" style="background-color:#7aa0e783; height: 240px;">
+                        <div class="position-absolute">
+                            <div class="bg-light rounded-5 p-1 icon-hover d-flex justify-content-center align-items-center" style="height: 30px; width: 30px;">
+                                <i class="bi bi-suit-heart text-dark"></i>
+                            </div>
+                        </div>
+                        <img class="image-product w-100 h-100" src="/image/G4.jpg" class="card-img-top">
+                    </div>
+                    <div class="card-body p-3 bg-light">
+                        <h5 class="font-righteous text-dark card-title">Bomber Jacket</h5>
+                        <p class="card-text text-dark">20.00$</p>
+                        <button class="btn btn-primary">Add to cart</button>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3 col-lg-3 shadow rounded-3 overflow-hidden card-hover me-3 me-lg-1 me-xl-5">
+                    <div class="card p-2 position-relative overflow-hidden" style="background-color:#7aa0e783; height: 240px;">
+                        <div class="position-absolute">
+                            <div class="bg-light rounded-5 p-1 icon-hover d-flex justify-content-center align-items-center" style="height: 30px; width: 30px;">
+                                <i class="bi bi-suit-heart text-dark"></i>
+                            </div>
+                        </div>
+                        <img class="image-product w-100 h-100" src="/image/G5.jpg" class="card-img-top">
+                    </div>
+                    <div class="card-body p-3 bg-light">
+                        <h5 class="font-righteous text-dark card-title">Bomber Jacket</h5>
+                        <p class="card-text text-dark">20.00$</p>
+                        <button class="btn btn-primary">Add to cart</button>
+                    </div>
+                </div>
+
+
+                <div class="col-6 col-md-3 col-lg- shadow rounded-3 overflow-hidden card-hover me-3 me-lg-1 me-xl-5">
+                    <div class="card p-2 position-relative overflow-hidden" style="background-color:#7aa0e783; height: 240px;">
+                        <div class="position-absolute">
+                            <div class="bg-light rounded-5 p-1 icon-hover d-flex justify-content-center align-items-center" style="height: 30px; width: 30px;">
+                                <i class="bi bi-suit-heart text-dark"></i>
+                            </div>
+                        </div>
+                        <img class="image-product w-100 h-100" src="/image/G6.jpg" class="card-img-top">
+                    </div>
+                    <div class="card-body p-3 bg-light">
+                        <h5 class="font-righteous text-dark card-title">Bomber Jacket</h5>
+                        <p class="card-text text-dark">20.00$</p>
+                        <button class="btn btn-primary">Add to cart</button>
+                    </div>
+                </div>
+                
+            </div>
+            
+         </div>
+         <!--Product-->
+         <div id="" class="container p-2 p-md-0 p-lg-4"   data-aos="fade-up"
+         data-aos-eseing="ease-in-out" data-aos-delay="300">
+            <div class="pt-3">
+                <h2 class="font-righteous"><span class="text-primary"><i class="bi bi-lightning-charge-fill"></i></span> New Arrivals</h2>
+            </div>
+            <h3 class="font-squada">Summer Collection New Mordem</h3>
+            <div class="d-flex  justify-content-start p-5 px-3 px-md-3 overflow-x-scroll">
+                <div class="col-6  col-md-3 col-lg-3 shadow rounded-3 overflow-hidden card-hover me-3 me-lg-1 me-xl-5">
+                    <div class="card p-2 position-relative overflow-hidden" style="background-color:#7aa0e783; height: 240px;">
+                        <div class="position-absolute">
+                            <div class="bg-light rounded-5 icon-hover p-1 d-flex justify-content-center align-items-center" style="height: 30px; width: 30px;">
+                                <i class="bi bi-suit-heart text-dark"></i>
+                              </div>
+                        </div>
+                        <img  class="image-product w-100 h-100 object-fit-cover" src="/image/n1.jpg" class="card-img-top " alt="">
+                    </div>
+                    <div class="card-body p-3 bg-light">
+                        <h5 class="font-righteous text-dark card-title">Cartoon  T-Shirts</h5>
+                        <p class="card-text text-dark">15.00$</p>
+                        <button class="btn btn-primary">Add to cart</button>
+                    </div>  
+                </div>
+                <div class="col-6  col-md-3 col-lg-3 shadow rounded-3 overflow-hidden card-hover me-3 me-lg-1 me-xl-5">
+                    <div class="card p-2 position-relative overflow-hidden" style="background-color:#7aa0e783; height: 240px;">
+                        <div class="position-absolute">
+                            <div class="bg-light rounded-5 icon-hover p-1 d-flex justify-content-center align-items-center" style="height: 30px; width: 30px;">
+                                <i class="bi bi-suit-heart text-dark"></i>
+                              </div>
+                        </div>
+                        <img  class="image-product w-100 h-100" src="/image/n2.jpg" class="card-img-top " alt="">
+                    </div>
+                    <div class="card-body p-3 bg-light">
+                        <h5 class="font-righteous text-dark card-title">Cartoon  T-Shirts</h5>
+                        <p class="card-text text-dark">15.00$</p>
+                        <button class="btn btn-primary">Add to cart</button>
+                    </div>  
+                </div>
+                <div class="col-6 col-md-3 col-lg-3 shadow rounded-3 overflow-hidden card-hover me-3 me-lg-1 me-xl-5">
+                    <div class="card p-2 position-relative overflow-hidden" style="background-color:#7aa0e783; height: 240px;">
+
+    	                <div class="position-absolute">
+                            <div class="bg-light rounded-5 p-1 icon-hover d-flex justify-content-center align-items-center" style="height: 30px; width: 30px;">
+                                <i class="bi bi-suit-heart text-dark"></i>
+                            </div>
+                        </div>
+                        <img class="image-product w-100 h-100" src="/image/n3.jpg" class="card-img-top">
+                    </div>
+                    <div class="card-body p-3 bg-light">
+                        <h5 class="font-righteous text-dark card-title">Cartoon  T-Shirts</h5>
+                        <p class="card-text text-dark">20.00$</p>
+                        <button class="btn btn-primary">Add to cart</button>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3 col-lg- shadow rounded-3 overflow-hidden card-hover me-3 me-lg-1 me-xl-5">
+                    <div class="card p-2 position-relative overflow-hidden" style="background-color:#7aa0e783; height: 240px;">
+                        <div class="position-absolute">
+                            <div class="bg-light rounded-5 p-1 icon-hover d-flex justify-content-center align-items-center" style="height: 30px; width: 30px;">
+                                <i class="bi bi-suit-heart text-dark"></i>
+                            </div>
+                        </div>
+                        <img class="image-product w-100 h-100" src="/image/n4.jpg" class="card-img-top">
+                    </div>
+                    <div class="card-body p-3 bg-light">
+                        <h5 class="font-righteous text-dark card-title">Cartoon  T-Shirts</h5>
+                        <p class="card-text text-dark">20.00$</p>
+                        <button class="btn btn-primary">Add to cart</button>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3 col-lg-3 shadow rounded-3 overflow-hidden card-hover me-3 me-lg-1 me-xl-5">
+                    <div class="card p-2 position-relative overflow-hidden" style="background-color:#7aa0e783; height: 240px;">
+                        <div class="position-absolute">
+                            <div class="bg-light rounded-5 p-1 icon-hover d-flex justify-content-center align-items-center" style="height: 30px; width: 30px;">
+                                <i class="bi bi-suit-heart text-dark"></i>
+                            </div>
+                        </div>
+                        <img class="image-product w-100 h-100" src="/image/n5.jpg" class="card-img-top">
+                    </div>
+                    <div class="card-body p-3 bg-light">
+                        <h5 class="font-righteous text-dark card-title">Cartoon  T-Shirts</h5>
+                        <p class="card-text text-dark">20.00$</p>
+                        <button class="btn btn-primary">Add to cart</button>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3 col-lg- shadow rounded-3 overflow-hidden card-hover me-3 me-lg-1 me-xl-5">
+                    <div class="card p-2 position-relative overflow-hidden" style="background-color:#7aa0e783; height: 240px;">
+                        <div class="position-absolute">
+                            <div class="bg-light rounded-5 p-1 icon-hover d-flex justify-content-center align-items-center" style="height: 30px; width: 30px;">
+                                <i class="bi bi-suit-heart text-dark"></i>
+                            </div>
+                        </div>
+                        <img class="image-product w-100 h-100" src="/image/n6.jpg" class="card-img-top">
+                    </div>
+                    <div class="card-body p-3 bg-light">
+                        <h5 class="font-righteous text-dark card-title">Cartoon  T-Shirts</h5>
+                        <p class="card-text text-dark">20.00$</p>
+                        <button class="btn btn-primary">Add to cart</button>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+         <!--Crud-->
+         <div id="" class="container my-5">
+            <div class="row m-0 m-0 font-righteous">
+                
+                <div class="col-12 col-md-6  ps-md-3 pe-md-2">
+                    <div class="shadow rounded-4 p-5 ">
+                        <form action="" id="userForm">
+                        
+                            <h2 class="border-bottom pb-3">Form add user</h2>
+                            <input type="hidden" id="indexUser">
+
+                            <div class="d-flex justify-content-between">
+                                <div class="col-6 p-1">
+                                    <label for="" class="fw-bold text-success ">Product Name</label>
+                                    <input required id="firstname" type="text" placeholder="Enter Prodcut Name " class="form-control shadow-none border border-1 my-2">
+                                </div>
+                                <div class="col-6 p-1">
+                                    <label for="" class="fw-bold text-success">Size</label>
+                                    <input required id="lastname" type="text" placeholder="Enter Your Size" class="form-control shadow-none border border-1 my-2">
+                                    <option value=""></option>
+                                </div>
+                            </div>
+    
+                           
+                            <div class="d-grid p-1 pb-4">
+                                <label  for="" class="fw-bold text-success ">Location</label>
+                                <input required id="email" type="email" placeholder="Enter Location" class="form-control shadow-none border border-1 my-2">
+                            </div>
+    
+    
+                            <div class="d-flex justify-content-end border-top pt-2 ">
+                                <button class="btn bg-primary text-light px-5">Save</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 p-2  ps-md-3 pe-md-2">
+                    <div class="shadow rounded-4 p-5 ps-2">
+                        <h2 class="border-bottom pb-2">Table Record</h2>
+                        <table class="table overflow-hidden table-bordered text-center">
+                            <thead>
+                                <tr class="table-success">
+                                    <th>Product</th>
+                                    <th>Size</th>
+                                    <th>Location</th>
+                                    <th>Ation</th>
+                                </tr>
+                            </thead>
+                            <tbody id="datauser">
+                                <tr class="align-middle">
+                                    <td>Jing</td>
+                                    <td>Jork</td>
+                                    <td>exampleso@</td>
+                                    <td>
+                                        <button class="btn bg-danger text-light"> <i class="bi bi-trash"></i></button>
+                                        <button class="btn bg-warning text-light"> <i class="bi bi-pencil-square"></i></button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Footer-->
+    <footer>
+        <div class="container-fluid p-0 bg-dark">
+            <div class="container pt-5">
+                <div class="row m-0 m-0 pt-3">
+                    <div class="col-md-3 col-12 h-text px-4 "> 
+                        <h5 class="text-light  "><i class="bi bi-house-door-fill me-1"></i>About</h5>
+                        <div class="py-4">
+                            <p class="text-light font-squada">Our Online Store was established with the goal of providing high-quality products and exceptional service to customers everywhere. Since our founding, we've grown into a trusted platform for discovering and purchasing a wide variety of items.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-12 px-4 h-text">
+                        <h5 class="text-light text-uppercase font-righteous">PRODUCTS</h5>
+                        <div class="py-4">
+                            <ul class="navbar-nav font-squada">
+                                <li><a class="nav-link text-light pt-0" href="#">Home</a></li>
+                                <li><a class="nav-link text-light" href="#">About</a></li>
+                                <li><a class="nav-link text-light" href="#">Product</a></li>
+                                <li><a class="nav-link text-light" href="#">Service</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-12 px-4 h-text">
+                        <h5 class="text-light font-righteous text-uppercase">Useful Links</h5>
+                        <div class="py-4">
+                            <ul class="navbar-nav">
+                                <li><a class="nav-link text-light font-squada pt-0" href="#">Pricing</a></li>
+                                <li><a class="nav-link text-light font-squada" href="#">setting</a></li>
+                                <li><a class="nav-link text-light font-squada" href="#">Contact</a></li>
+                                <li><a class="nav-link text-light font-squada" href="#">Helps</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-12 px-4 h-text">
+                        <h5 class="text-light font-righteous text-uppercase">Contact</h5>
+                        <div class="py-4">
+                            <ul class="navbar-nav font-squada">
+                                <li><a class="nav-link text-light" href="#"><i class="bi bi-house-door-fill me-3 "></i>Royal university of phnome penh</a></li>
+                                <li><a class="nav-link text-light" href="#"><i class="bi bi-envelope-heart-fill me-3"></i>https://www.rupp.edu.kh/.com</a></li>
+                                <li><a class="nav-link text-light" href="#"><i class="bi bi-telephone-fill me-3"></i>+ 067 668 569</a></li>
+                                <li><a class="nav-link text-light" href="#"><i class="bi bi-phone-fill me-3 "></i>+ 070 66 859</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid bg-primary p-0 font-righteous px-4">
+                <h1 class="text-center text-light fs-6 m-0 py-4" style="letter-spacing: 2px;">
+                    Copyright  @2024 All rights reserved | This is Online Store Project  <span class="text-warning auto-type fw-bold" style="letter-spacing: 2px;"></span></h1>
+            </div>
+        </div>
+ </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+<script src="/js/index.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12?fbclid=IwY2xjawFwVaRleHRuA2FlbQIxMAABHeJ8NPxpuUluvD5NUmA0Tvsq1PT5WepPIo3x1wglWc0p1KQJk3XhLP_1yQ_aem_6BW4iUjVsOAjuuZ37nFuFw"></script>
+<script>
+    AOS.init();
+     var typed = new Typed('.auto-type', {
+        
+        strings: ['Unleash Your Street Style With Our New Collection',],
+        typeSpeed: 30,
+        backSpeed: 20,
+        loop: true,
+      });
+  </script>
+</html>

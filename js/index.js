@@ -35,7 +35,7 @@ const user = [
   
     if(indexUser.value == ""){
         user.push({first:firstname,last:lastname,email:email})
-        showToast("ចុមឆ្លាតមេស👍","#0f4d0f")
+        showToast("បញ្ចូលត្រឹមត្រូវ👍","#0f4d0f")
     }else{
         user[indexUser.value] = {first:firstname,last:lastname,email:email}
         showToast("Update ត្រឺមត្រូវ👌","green")

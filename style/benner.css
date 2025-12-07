@@ -8,6 +8,7 @@
 .text-hover:hover{
     color: red !important;
 }
+
 @keyframes rotate {
     0% { transform: rotate(0deg); }
     50% { transform: rotate(8deg); }
